@@ -1,0 +1,15 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Reviews";
+}
+<h1>@ViewData["Title"]</h1>
+
+    <p>Please leave your review below:</p>
+<form method="post" asp-page-handler="Submit">
+    <input type="text" name="name" id="name" placeholder="Name" required><br><br>
+    <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+    <textarea name="review" id="review" placeholder="Drop a review" required></textarea><br><br>
+    <button type="submit" class="btn btn-success">Submit</button><br><br>
+</form>
+
